@@ -10,6 +10,9 @@ public class FizzBuzz {
         if(i%5==0){
             returnStr+="Buzz";
         }
+        if(i%7==0){
+            returnStr+="Whizz";
+        }
 
         if(returnStr.equals("")){
             return String.valueOf(i);
