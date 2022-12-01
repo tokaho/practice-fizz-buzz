@@ -27,5 +27,16 @@ public class FizzBuzzTest {
         assertEquals("Fizz",actual);
     }
 
+    @Test
+    void should_return_Buzz_when_countOff_given_5(){
+        //given
+        int input=5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String actual=fizzBuzz.countOff(input);
+        //then
+        assertEquals("Buzz",actual);
+    }
+
 
 }
