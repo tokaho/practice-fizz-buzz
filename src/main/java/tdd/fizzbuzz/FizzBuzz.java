@@ -7,20 +7,20 @@ public class FizzBuzz {
     public static final String BUZZ = "Buzz";
     public static final String WHIZZ = "Whizz";
 
-    public String countOff(int i) {
+    public String countOff(int countNumber) {
         String returnStr = EMPTY;
-        if (i % 3 == 0) {
+        if (countNumber % 3 == 0) {
             returnStr += FIZZ;
         }
-        if (i % 5 == 0) {
+        if (countNumber % 5 == 0) {
             returnStr += BUZZ;
         }
-        if (i % 7 == 0) {
+        if (countNumber % 7 == 0) {
             returnStr += WHIZZ;
         }
 
         if (returnStr.equals(EMPTY)) {
-            return String.valueOf(i);
+            return String.valueOf(countNumber);
         } else {
             return returnStr;
         }
