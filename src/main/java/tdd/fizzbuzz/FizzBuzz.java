@@ -7,11 +7,14 @@ public class FizzBuzz {
         if(i%3==0){
             returnStr+="Fizz";
         }
+        if(i%5==0){
+            returnStr+="Buzz";
+        }
 
         if(returnStr.equals("")){
             return String.valueOf(i);
+        }else{
+            return returnStr;
         }
-
-        return returnStr;
     }
 }
